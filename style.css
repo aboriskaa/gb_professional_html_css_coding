@@ -437,3 +437,57 @@ body {
     color: white;
     background: #FF6A6A;
 }
+
+.services {
+    background: #222224;
+    padding-top: 48px;
+    padding-bottom: 81px;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+@media (min-width: 1200px) {
+    .services {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
+.services .container {
+    display: grid;
+    gap: 46px;
+}
+
+@media (min-width: 1200px) {
+    .services .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 46px;
+    }
+}
+
+.serivceUnit {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicesTitle,
+.servicesText {
+    color: #fbfbfb;
+}
+
+.servicesTitle {
+    font-size: 19.96px;
+    line-height: 24px;
+    margin-top: 27px;
+    margin-bottom: 15px;
+}
+
+.servicesText {
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+    max-width: 340px;
+}
