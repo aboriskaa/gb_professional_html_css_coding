@@ -42,6 +42,7 @@ body {
 }
 
 @media (min-width: 768px) {
+
     .userIcon,
     .cartIcon {
         display: inline;
@@ -137,4 +138,97 @@ body {
     font-size: 14px;
     line-height: 17px;
     color: #f16d7f;
+}
+
+
+.filters {
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
+
+@media (min-width: 1600px) {
+    .filters {
+        margin-top: 51px;
+        margin-bottom: 64px;
+    }
+}
+
+.filters .container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+@media (min-width: 768px) {
+    .filters .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .filters .container {
+        padding-left: 0;
+        padding-right: 0;
+        justify-content: flex-start;
+    }
+}
+
+.filtersRight {
+    display: flex;
+    font-size: 12px;
+    line-height: 14px;
+    color: #6f6e6e;
+}
+
+@media (min-width: 1600px) {
+    .filtersRight {
+        font-size: 14px;
+        line-height: 17px;
+        margin-left: 320px;
+    }
+}
+
+.filtersRight img {
+    position: relative;
+    bottom: 1px;
+    margin-left: 9px;
+}
+
+.filtersRight>div:not(:last-child) {
+    margin-right: 15px;
+}
+
+@media (min-width: 375px) {
+    .filtersRight>div:not(:last-child) {
+        margin-right: 24px;
+    }
+}
+
+.filtersLeft span {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .filtersLeft span {
+        display: inline;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+    }
+}
+
+.filtersLeft img {
+    width: 37px;
+    height: 25px;
+}
+
+@media (min-width: 768px) {
+    .filtersLeft img {
+        width: 15px;
+        height: 10px;
+        margin-left: 11px;
+    }
 }
